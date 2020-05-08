@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#6a737b"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".Favorites"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
@@ -35,7 +35,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="2"
                 android:gravity="center"
-                android:text="Nature Guide"
+                android:text="Favorites"
                 android:textSize="20sp" />
             <!--body-->
             <LinearLayout
@@ -45,7 +45,7 @@
                 android:orientation="horizontal"
                 android:weightSum="10">
                 <ListView
-                    android:id="@+id/mainListView"
+                    android:id="@+id/favoritesListView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"

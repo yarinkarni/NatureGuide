@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="20"
@@ -13,30 +14,31 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    //Title
+    <!--Title-->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="Nature Guide \n Register"
+        android:text="Nature Guide\n Register"
         android:textSize="20dp" />
 
-    //app image
+    <!--app image-->
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
+        android:layout_weight="4"
         android:background="@android:color/white"
         android:src="@mipmap/ic_nature_main" />
-    //body
+
+    <!--body-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="12"
         android:orientation="horizontal"
         android:weightSum="10">
 
@@ -44,14 +46,15 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
-        //fields container
+
+        <!--fields container-->
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:orientation="vertical"
-            android:weightSum="12">
+            android:weightSum="14">
 
             <EditText
                 android:id="@+id/RegisterUserEmail"
@@ -60,11 +63,33 @@
                 android:layout_weight="2"
                 android:hint="Insert Email.."
                 android:inputType="text" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+            <EditText
+                android:id="@+id/RegisterUserFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:hint="Insert First Name.."
+                android:inputType="text" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
+            <EditText
+                android:id="@+id/RegisterUserLastname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:hint="Insert Last Name.."
+                android:inputType="text" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
 
             <EditText
                 android:id="@+id/RegisterUserPassword1"
@@ -73,6 +98,10 @@
                 android:layout_weight="2"
                 android:hint="Insert Password.."
                 android:inputType="textPassword" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
             <EditText
                 android:id="@+id/RegisterUserPassword2"
                 android:layout_width="match_parent"
@@ -84,13 +113,14 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
 
             <Button
                 android:id="@+id/RegisterBtnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1.5"
+                android:background="@drawable/border"
                 android:text="Register" />
 
             <Space
@@ -113,10 +143,7 @@
 
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+
 
 
 </LinearLayout>

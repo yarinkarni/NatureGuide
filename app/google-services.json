@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "995874412071-2ksr1bg9e9emuj9kcc3gjdjp8cilakps.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.natureguide",
+            "certificate_hash": "b2610856ecf1130350eafee4b060c199f3e89f2e"
+          }
+        },
+        {
           "client_id": "995874412071-21bepkf5ucrfijeqoslul492easgb5rj.apps.googleusercontent.com",
           "client_type": 3
         }
